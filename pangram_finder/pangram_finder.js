@@ -4,8 +4,7 @@ const PangramFinder = function (phrase) {
 }
 
 PangramFinder.prototype.isPangram = function () {
-  const splitPhrase = this.phrase.split('');
-  return answer = this.alphabet.every(letter => {    
+  return answer = this.alphabet.every(letter => { 
     for (let char of this.phrase){
       if (char.toLowerCase() === letter){
         return true;
